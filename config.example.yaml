@@ -1,0 +1,4 @@
+host: '127.0.0.1'
+port: 12000
+database_uri: 'root:@tcp(localhost:3306)/ip_region?charset=utf8mb4&parseTime=true'
+secret_key: 123456
