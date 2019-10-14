@@ -6,8 +6,9 @@
 package api
 
 import (
-	"ip2region/app"
 	"net/http"
+
+	"ip2region/app"
 )
 
 func (a *API) GetIPRegion(ctx *app.Context, w http.ResponseWriter, r *http.Request) error {

@@ -2,18 +2,19 @@
 * @File: root.go
 * @Author: wongxinjie
 * @Date: 2019/10/6
-*/
+ */
 package cmd
 
 import (
 	"fmt"
+	"os"
+
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"os"
 )
 
 var rootCmd = &cobra.Command{
-	Use: "ip2region",
+	Use:   "ip2region",
 	Short: "ip2region Web Application",
 	Run: func(cmd *cobra.Command, args []string) {
 		cmd.Usage()
@@ -33,7 +34,7 @@ func initConfig() {
 	if configFile != "" {
 		viper.SetConfigFile(configFile)
 	} else {
-		viper.SetConfigName( "config")
+		viper.SetConfigName("config")
 		viper.AddConfigPath(".")
 		viper.AddConfigPath("/tmp/ip2region")
 		viper.AddConfigPath("$HOME/.ip2region")
