@@ -6,9 +6,9 @@
 package app
 
 import (
-	"github.com/sirupsen/logrus"
-
 	"ip2region/db"
+
+	"github.com/sirupsen/logrus"
 )
 
 type App struct {
